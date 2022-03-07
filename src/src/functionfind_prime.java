@@ -10,6 +10,7 @@ public class functionfind_prime {
             }
         }
 
+
     }
 
     static boolean calc(int inputNum) {
