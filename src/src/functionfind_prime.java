@@ -1,19 +1,25 @@
 public class functionfind_prime {
 
     public static void main(String[] args) {
-        int n = calc(100);
-        System.out.println(n);
+        for(int i =2; i<=100; i++){
+            boolean result = calc(i);
+            if(result){
+                System.out.println(i);
+            }else {
+                System.out.println(i + "不是質數");
+            }
+        }
+
     }
 
-    static int calc(int n) {
-        int i;
-        for (i = 2; i < n ; i++) {
-            for (n = 2; n < i; n++) {
-                if (i % n == 0)
-                    break;
+    static boolean calc(int inputNum) {
+        boolean result = true;
+        for (int i = 2; i < inputNum ; i++) {
+            if (inputNum % i == 0) {
+                result = false;
+                break;
             }
-            if (n == i);
         }
-        return n;
+        return result;
     }
 }
