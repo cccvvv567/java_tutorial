@@ -4,6 +4,9 @@ public class array_ex {
         for (String i : cars) {
             System.out.println(i);
         }
+        System.out.println(cars.length);
+
 
     }
 }
+//collection
